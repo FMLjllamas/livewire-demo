@@ -130,7 +130,7 @@ new class extends Component
         -> read ✓
         -> update ✓
         -> delete ✓
-        -> export
+        -> export sorta? i have no idea what popping up on the screen but hey it works.
 
         added via composer livewire/livewire
         added via composer spatie/laravel-permission
