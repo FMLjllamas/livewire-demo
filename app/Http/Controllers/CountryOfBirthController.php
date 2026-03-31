@@ -126,7 +126,7 @@ class CountryOfBirthController extends Controller
     
     }
 
-/*
+
     public function export() {
         
         $pipeline = [
@@ -157,9 +157,11 @@ class CountryOfBirthController extends Controller
             ]);
         }
         
-        return SimpleExcelWriter::streamDownload( (new CountryOfBirth)->getTable() . Carbon::now() . ".xlsx" )->addRows($rows)->toBrowser();
+        SimpleExcelWriter::streamDownload( (new CountryOfBirth)->getTable() . "_" . Carbon::now() . ".xlsx" )->addRows($rows)->toBrowser();
+
+        return redirect()->route('birthpage.index')->with('success', 'excel sheet downloaded!');
     }
-*/
+
 
     private function validCountry($input) {
 

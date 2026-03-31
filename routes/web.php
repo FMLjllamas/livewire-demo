@@ -20,7 +20,6 @@ Route::post('/birth', [CountryOfBirthController::class, 'store'])->name('birthpa
 Route::put('/birth/update', [CountryOfBirthController::class, 'update'])->name('birthpage.update');
 Route::delete('/birth/delete', [CountryOfBirthController::class, 'destroy'])->name('birthpage.delete');
 
-/*
-Route::get('/birth/excel', [CountryOfBirthController::class, 'export']);
-*/
+Route::get('/birth/excel', [CountryOfBirthController::class, 'export'])->name('birthpage.export');
+
 ?>

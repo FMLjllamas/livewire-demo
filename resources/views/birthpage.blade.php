@@ -279,6 +279,12 @@
             <button type="submit" class="addbutton">add</button>
         </form>
 
+        <form method="GET" action="{{ route('birthpage.export') }}">
+
+            <button type="submit" style="color: black; background: #00920c;" class="findbutton">excel</button>
+        
+        </form>
+
     </div>
 
 
